@@ -1,9 +1,12 @@
+# -*- coding: utf-8 -*-
+# The class which extends Redcarpet::Render::Base and converts the text
+
 require 'redcarpet'
 
-#TODO parse <pre> tags for {code} tags
-#TODO parse <p> tags to paragraphs
-#TODO parse <iframe> tags
-class Gfm2Confluence::Converter < Redcarpet::Render::Base	
+#TODO: parse <pre> tags for {code} tags
+#TODO: parse <p> tags to paragraphs
+#TODO: parse <iframe> tags
+class Gfm2Confluence::Converter < Redcarpet::Render::Base
 	def block_code(code, language)
 		"{code}\n#{code}{code}\n\n"
 	end
@@ -42,7 +45,7 @@ class Gfm2Confluence::Converter < Redcarpet::Render::Base
 	end
 
 	def autolink(link, link_type)
-		"[#{link}]\n"
+		"[#{link}]"
 	end
 
 	def codespan(code)
@@ -66,7 +69,7 @@ class Gfm2Confluence::Converter < Redcarpet::Render::Base
 	end
 
 	def link(link, title, alt_text)
-		title.to_s.empty? ? "[#{link}]" : "[#{title}|#{link}]"
+		alt_text.to_s.empty? ? "[#{link}]" : "[#{alt_text}|#{link}]"
 	end
 
 	def raw_html(raw_html)
@@ -95,7 +98,7 @@ class Gfm2Confluence::Converter < Redcarpet::Render::Base
 	end
 
 	def escape(text)
-		#TODO Check if anything else needs to be escaped
+		#TODO: Check if anything else needs to be escaped
 		text.gsub(/\{|\}/, '\\\\\0') #This replaces { with \{
 	end
 end

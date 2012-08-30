@@ -22,7 +22,7 @@ Jeweler::Tasks.new do |gem|
   gem.email = "ablagoev@xs-software.com"
   gem.authors = ["ablagoev"]
   # dependencies defined in Gemfile
-  gem.files = Dir.glob('lib/**/*.rb')
+  gem.add_dependency 'redcarpet', '~> 2.1.1'
 end
 Jeweler::RubygemsDotOrgTasks.new
 

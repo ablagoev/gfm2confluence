@@ -1,6 +1,33 @@
 = gfm2confluence
 
-Description goes here.
+This is a simple tool, which converts gfm documents (GitHub Flavored Markdown[http://github.github.com/github-flavored-markdown/]) to the {Atlassian Wiki Format}[https://confluence.atlassian.com/display/DOC/Confluence+Wiki+Markup]. This format is mostly used inside jira and confluence.
+
+The implementation was greatly inspired by markdown2confluence[https://github.com/jedi4ever/markdown2confluence].
+
+The gem is based on Redcarpet[https://github.com/vmg/redcarpet].
+
+== Installation:
+
+=== Via gem:
+
+`gem install gfm2confluence`
+
+=== From github:
+
+`gem install bundler`
+`git clone git://github.com/ablagoev/gfm2confluence.git`
+`bundle install vendor`
+
+== Usage:
+
+`gfm2confluence <inputfile>`
+`gfm2confluence <inputtext>`
+
+== Known Issues:
+
+* Since redcarper/sundown mostly remove newlines, extra newlines have been added to the parsing of paragraphs, list items, etc.
+* Tables are not yet supported
+* Nested lists are not supported
 
 == Contributing to gfm2confluence
  

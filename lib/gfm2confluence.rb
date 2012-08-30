@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# The base class which is used to convert the text
 require 'redcarpet'
 
 class Gfm2Confluence
