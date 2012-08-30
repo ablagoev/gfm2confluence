@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.date = %q{2012-08-31}
   s.default_executable = %q{gfm2confluence}
   s.description = %q{This tool can be used to convert the git hub flavoured markdown format to the wiki markup used in atlassian products (jira, confluence, etc.)}
-  s.email = %q{ablagoev@xs-software.com}
+  s.email = %q{alexander.i.blagoev@gmail.com}
   s.executables = ["gfm2confluence"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
