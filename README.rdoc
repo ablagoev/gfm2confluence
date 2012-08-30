@@ -10,18 +10,18 @@ The gem is based on Redcarpet[https://github.com/vmg/redcarpet].
 
 === Via gem:
 
-`gem install gfm2confluence`
+ gem install gfm2confluence
 
 === From github:
 
-`gem install bundler`
-`git clone git://github.com/ablagoev/gfm2confluence.git`
-`bundle install vendor`
+ gem install bundler
+ git clone git://github.com/ablagoev/gfm2confluence.git
+ bundle install vendor
 
 == Usage:
 
-`gfm2confluence <inputfile>`
-`gfm2confluence <inputtext>`
+ gfm2confluence <inputfile>
+ gfm2confluence <inputtext>
 
 == Known Issues:
 
