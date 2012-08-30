@@ -19,7 +19,7 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = "Convert git hub flavoured markdown to atlassian confluence format"
   gem.description = "This tool can be used to convert the git hub flavoured markdown format to the wiki markup used in atlassian products (jira, confluence, etc.)"
-  gem.email = "ablagoev@xs-software.com"
+  gem.email = "alexander.i.blagoev@gmail.com"
   gem.authors = ["ablagoev"]
   # dependencies defined in Gemfile
   gem.add_dependency 'redcarpet', '~> 2.1.1'
