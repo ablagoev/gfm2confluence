@@ -1,6 +1,6 @@
 = gfm2confluence
 
-This is a simple tool, which converts gfm documents (GitHub Flavored Markdown[http://github.github.com/github-flavored-markdown/]) to the {Atlassian Wiki Format}[https://confluence.atlassian.com/display/DOC/Confluence+Wiki+Markup]. This format is mostly used inside jira and confluence.
+This is a simple tool, which converts gfm documents ({GitHub Flavored Markdown}[http://github.github.com/github-flavored-markdown/]) to the {Atlassian Wiki Format}[https://confluence.atlassian.com/display/DOC/Confluence+Wiki+Markup]. This format is mostly used inside jira and confluence.
 
 The implementation was greatly inspired by markdown2confluence[https://github.com/jedi4ever/markdown2confluence].
 
